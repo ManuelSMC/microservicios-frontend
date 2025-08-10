@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LogService {
-  private apiUrl = 'http://localhost:5000/auth';
+  private apiUrl = 'https://microservicios.duckdns.org/auth';
 
   constructor(private http: HttpClient) {}
 
@@ -21,3 +21,4 @@ export class LogService {
     return this.http.get<any>(`${this.apiUrl}/logs`, { params });
   }
 }
+
