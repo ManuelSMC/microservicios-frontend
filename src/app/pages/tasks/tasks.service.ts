@@ -7,7 +7,7 @@ import { Task, RespuestaTareas } from '../../core/models/task.model';
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://158.69.197.251:5000/task';
+  private apiUrl = 'https://microservicios.duckdns.org/task';
 
   constructor(private http: HttpClient) {}
 
